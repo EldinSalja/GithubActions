@@ -72,7 +72,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Multiply_NullNguyen()
+        public void Multiply_NullSalja()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Multiply("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -80,7 +80,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_ValidNguyen()
+        public void Divide_ValidSalja()
         {
             Assert.AreEqual(3, Program.Divide("6", "2"));
             Assert.AreEqual(5, Program.Divide("10", "2"));
@@ -88,7 +88,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_InvalidNguyen()
+        public void Divide_InvalidSalja()
         {
             Assert.Throws<FormatException>(() => Program.Divide("1", "a"));
             Assert.Throws<FormatException>(() => Program.Divide("a", "1"));
@@ -96,7 +96,7 @@ namespace GithubActionsLab
         }
 
         [Test]
-        public void Divide_NullNguyen()
+        public void Divide_NullSalja()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Divide("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
